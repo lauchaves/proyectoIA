@@ -10,8 +10,8 @@ import DetectChars
 import DetectPlates
 import PossiblePlate
 
-from Tkinter import Tk
-from tkFileDialog import askopenfilename
+##from Tkinter import Tk
+##from tkFileDialog import askopenfilename
 
 # module level variables ##########################################################################
 SCALAR_BLACK = (0.0, 0.0, 0.0)
@@ -21,8 +21,8 @@ SCALAR_GREEN = (0.0, 255.0, 0.0)
 SCALAR_RED = (0.0, 0.0, 255.0)
 
 showSteps = False
-showSteps1 = True
-showSteps2 = False
+showSteps1 = False
+showSteps2 = True
 ###################################################################################################
 def main():
 
@@ -33,13 +33,13 @@ def main():
         return                                                          # and exit program
     # end if
 
-    Tk().withdraw()  # we don't want a full GUI, so keep the root window from appearing
-    filename = askopenfilename()  # show an "Open" dialog box and return the path to the selected file
-    print(filename)
+    #Tk().withdraw()  # we don't want a full GUI, so keep the root window from appearing
+    #filename = askopenfilename()  # show an "Open" dialog box and return the path to the selected file
+    #print(filename)
 
 
     ##imgOriginalScene  = cv2.imread("c2.jpg")               # open image
-    res = cv2.imread(filename)  # open image
+    res = cv2.imread("c8.jpg")  # open image
 
     imgOriginalScene = np.mat
 
